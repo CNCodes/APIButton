@@ -133,7 +133,7 @@ function addFavorites(response) {
                 var topicName = ($(this).text());
                 console.log(topicName);
                 $.ajax({
-                    url: "http://api.giphy.com/v1/gifs/search?q=" + topicName + "&limit=10&api_key=CTQB8RbrPA6QANI0K2AHuM915bo0avta",
+                    url: "https://api.giphy.com/v1/gifs/search?q=" + topicName + "&limit=10&api_key=CTQB8RbrPA6QANI0K2AHuM915bo0avta",
                     method: 'GET',
             }).then(function(response) {
                 //function needs to be inside the api call so that it recognizes "response"
